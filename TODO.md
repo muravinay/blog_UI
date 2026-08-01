@@ -10,3 +10,12 @@
 - [x] 7. Add remote (origin) and push all branches
 - [x] 8. Verify the repository on GitHub
 
+# Task: Deploy the project to GitHub Pages
+
+## Steps
+- [x] 1. Install npm dependencies (`npm install`)
+- [x] 2. Build the production bundle (`ng build --base-href=/blog_UI/`)
+- [x] 3. Deploy build output to the `gh-pages` branch (via angular-cli-ghpages)
+- [x] 4. Enable GitHub Pages on the repository
+- [x] 5. Verify the deployed site is live
+
