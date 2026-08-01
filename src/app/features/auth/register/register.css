@@ -1,0 +1,124 @@
+:host {
+  display: block;
+}
+
+.register-page {
+  min-height: calc(100vh - 76px);
+  display: grid;
+  place-items: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%);
+}
+
+.register-card {
+  width: min(100%, 30rem);
+  max-width: 30rem;
+  padding: 2.5rem;
+  border: 1px solid rgba(99, 102, 241, 0.12);
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 1.5rem 4rem rgba(30, 41, 59, 0.12);
+}
+
+.register-heading {
+  margin-bottom: 1.75rem;
+}
+
+.eyebrow {
+  color: #6366f1;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0.5rem 0;
+  color: #172033;
+  font-size: clamp(1.8rem, 4vw, 2.35rem);
+  font-weight: 750;
+}
+
+.register-heading p,
+.login-prompt {
+  margin: 0;
+  color: #64748b;
+}
+
+.field {
+  margin-bottom: 1.1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.45rem;
+  color: #334155;
+  font-size: 0.9rem;
+  font-weight: 650;
+}
+
+input {
+  width: 100%;
+  padding: 0.8rem 0.9rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.65rem;
+  color: #1e293b;
+  outline: none;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+input.is-invalid {
+  border-color: #dc3545;
+}
+
+.field-error {
+  display: block;
+  margin-top: 0.35rem;
+  color: #dc3545;
+  font-size: 0.8rem;
+}
+
+.submit-button {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.85rem 1rem;
+  border: 0;
+  border-radius: 0.65rem;
+  background: #4f46e5;
+  color: #fff;
+  font-weight: 700;
+  transition: background 160ms ease, transform 160ms ease;
+}
+
+.submit-button:hover:not(:disabled) {
+  background: #4338ca;
+  transform: translateY(-1px);
+}
+
+.submit-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+.login-prompt {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.login-prompt a {
+  color: #4f46e5;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  .register-card {
+    padding: 1.75rem;
+  }
+}
